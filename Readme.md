@@ -18,13 +18,13 @@ Change Password to the password of the user above
 
 **In generic.erb**
 
-Replace local email address with the local email address of the local user sending email
+Replace "From Name" with the local email address of the local user sending email
 
 This should be something like
 
 root@hostname from /etc/hosts
 
-Replace Office 365 email address with the address used in sasl_passwd.erb
+Replace email@domain.com with the address used in sasl_passwd.erb (The one for office 365)
 
 
 ***After configuration***
