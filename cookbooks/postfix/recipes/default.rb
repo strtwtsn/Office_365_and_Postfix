@@ -24,12 +24,12 @@ mode 0600
 end
 
 template "/etc/postfix/generic" do
-source "generic.erb
+source "generic.erb"
 mode 0600
 end
 
 
-bash "Postfix configuration" do
+bash "Configuration" do
 user "root"
 code <<-EOH
 sudo postmap /etc/postfix/sasl_passwd
