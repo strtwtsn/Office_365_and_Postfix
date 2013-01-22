@@ -14,8 +14,7 @@ end
 
 template "/etc/postfix/main.cf" do
 source "main.cf.erb"
-mode 0600
-notifies :restart, resources(:service => "postfix"), :immediately
+mode 0644
 end
 
 template "/etc/postfix/sasl_passwd" do
