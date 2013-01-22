@@ -26,3 +26,7 @@ root@hostname from /etc/hosts
 
 Replace Office 365 email address with the address used in sasl_passwd.erb
 
+
+***After configuration***
+
+/usr/local/bin/chef-solo -c /var/chef/config/chefsolo.rb -j /var/chef/roles/postfix.json
